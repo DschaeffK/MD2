@@ -1,0 +1,104 @@
+body {
+    min-height: 100vh;
+    margin: 0px;
+    font-family: Calibri, Arial, sans-serif;
+}
+
+section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+section img {
+    position: absolute;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.p-abs {
+    position: absolute;
+}
+
+.p-rel {
+    position: relative;
+}
+
+/* .wolken {
+    transition: .001s;
+} */
+
+.title {
+    position: fixed;
+    color: #fff;
+    font-family: Calibri, Arial, sans-serif;
+}
+
+.breaker {
+    position: relative;
+    background-color: inherit;
+    color:white;
+    padding: 2em;
+}
+
+.fade-in-left {
+    animation-name: fadeinleft;
+    animation-duration: 1s;
+    left: 200px;
+    top: 0;
+    height: 300px;
+    width: inherit;
+    font-size: 20px;
+}
+
+.fade-out-left {
+    animation-name: fadeoutleft;
+    animation-duration: 1s;
+    left: 850px;
+    top: 150px;
+    height: 5px;
+    width: 5px;
+    font-size: 1px;
+}
+
+@keyframes fadeinleft {
+    from {
+        display: none;
+        left: 850px;
+        top: 150px;
+        height: 5px;
+        width: 5px;
+        font-size: 1px;
+    }
+
+    to {
+        display: inline-block;
+        left: 200px;
+        top: 0;
+        height: 300px;
+        width: inherit;
+        font-size: 20px;
+    }
+}
+
+@keyframes fadeoutleft {
+    to {
+        display: none;
+        left: 850px;
+        top: 150px;
+        height: 5px;
+        width: 5px;
+        font-size: 1px;
+    }
+
+    from {
+        display: inline-block;
+        left: 10%;
+        top: 0;
+        height: 300px;
+        width: inherit;
+        font-size: 20px;
+    }
+}
