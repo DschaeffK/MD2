@@ -1,7 +1,7 @@
 body {
     min-height: 100vh;
     margin: 0px;
-    font-family: Calibri, Arial, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 section {
@@ -12,6 +12,18 @@ section {
 
 section img {
     position: absolute;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hoverable:hover {
+    cursor: pointer;
 }
 
 .d-inline-block {
@@ -33,7 +45,6 @@ section img {
 .title {
     position: fixed;
     color: #fff;
-    font-family: Calibri, Arial, sans-serif;
 }
 
 .breaker {
@@ -43,62 +54,204 @@ section img {
     padding: 2em;
 }
 
-.fade-in-left {
-    animation-name: fadeinleft;
+.fade-in-left-1 {
+    animation-name: fadeinleft1;
     animation-duration: 1s;
-    left: 200px;
+    left: 15vw;
     top: 0;
-    height: 300px;
-    width: inherit;
-    font-size: 20px;
+    height: 23vw;
+    width: 20vw;
 }
 
-.fade-out-left {
-    animation-name: fadeoutleft;
+.fade-out-left-1 {
+    animation-name: fadeoutleft1;
     animation-duration: 1s;
-    left: 850px;
+    left: 45vw;
     top: 150px;
-    height: 5px;
-    width: 5px;
-    font-size: 1px;
+    height: 1vh;
+    width: 1vw;
 }
 
-@keyframes fadeinleft {
+.fade-in-right-2 {
+    animation-name: fadeinright2;
+    animation-duration: 1s;
+    left: 60vw;
+    top: 500px;
+    height: 23vw;
+    width: 20vw;
+}
+
+.fade-out-right-2 {
+    animation-name: fadeoutright2;
+    animation-duration: 1s;
+    left: 45vw;
+    top: 700px;
+    height: 1vh;
+    width: 1vw;
+}
+
+.fade-in-left-3 {
+    animation-name: fadeinleft3;
+    animation-duration: 1s;
+    left: 15vw;
+    top: 1000px;
+    height: 23vw;
+    width: 20vw;
+}
+
+.fade-out-left-3 {
+    animation-name: fadeoutleft3;
+    animation-duration: 1s;
+    left: 45vw;
+    top: 1200px;
+    height: 1vh;
+    width: 1vw;
+}
+
+.fade-in-right-4 {
+    animation-name: fadeinright4;
+    animation-duration: 1s;
+    left: 60vw;
+    top: 1500px;
+    height: 23vw;
+    width: 20vw;
+}
+
+.fade-out-right-4 {
+    animation-name: fadeoutright4;
+    animation-duration: 1s;
+    left: 45vw;
+    top: 1700px;
+    height: 1vh;
+    width: 1vw;
+}
+
+@keyframes fadeinleft1 {
     from {
-        display: none;
-        left: 850px;
+        left: 45vw;
         top: 150px;
-        height: 5px;
-        width: 5px;
-        font-size: 1px;
+        height: 1vh;
+        width: 1vw;
     }
 
     to {
-        display: inline-block;
-        left: 200px;
+        left: 15vw;
         top: 0;
-        height: 300px;
-        width: inherit;
+        height: 23vw;
+        width: 20vw;
+    }
+}
+
+@keyframes fadeoutleft1 {
+    to {
+        left: 45vw;
+        top: 150px;
+        height: 1vh;
+        width: 1vw;
+    }
+
+    from {
+        left: 15vw;
+        top: 0;
+        height: 23vw;
+        width: 20vw;
         font-size: 20px;
     }
 }
 
-@keyframes fadeoutleft {
+@keyframes fadeinright2 {
+    from {
+        left: 45vw;
+        top: 650px;
+        height: 1vh;
+        width: 1vw;
+    }
+
     to {
-        display: none;
-        left: 850px;
-        top: 150px;
-        height: 5px;
-        width: 5px;
-        font-size: 1px;
+        left: 60vw;
+        top: 500px;
+        height: 23vw;
+        width: 20vw;
+        font-size: 20px;
+    }
+}
+
+@keyframes fadeoutright2 {
+    to {
+        left: 45vw;
+        top: 650px;
+        height: 1vh;
+        width: 1vw;
     }
 
     from {
-        display: inline-block;
-        left: 10%;
-        top: 0;
-        height: 300px;
-        width: inherit;
-        font-size: 20px;
+        left: 60vw;
+        top: 500px;
+        height: 23vw;
+        width: 20vw;
+    }
+}
+
+@keyframes fadeinleft3 {
+    from {
+        left: 45vw;
+        top: 1150px;
+        height: 1vh;
+        width: 1vw;
+    }
+
+    to {
+        left: 15vw;
+        top: 1000px;
+        height: 23vw;
+        width: 20vw;
+    }
+}
+
+@keyframes fadeoutleft3 {
+    to {
+        left: 45vw;
+        top: 1150px;
+        height: 1vh;
+        width: 1vw;
+    }
+
+    from {
+        left: 15vw;
+        top: 1000px;
+        height: 23vw;
+        width: 20vw;
+    }
+}
+
+@keyframes fadeinright4 {
+    from {
+        left: 45vw;
+        top: 1650px;
+        height: 1vh;
+        width: 1vw;
+    }
+
+    to {
+        left: 60vw;
+        top: 1500px;
+        height: 23vw;
+        width: 20vw;
+    }
+}
+
+@keyframes fadeoutright4 {
+    to {
+        left: 45vw;
+        top: 1650px;
+        height: 1vh;
+        width: 1vw;
+    }
+
+    from {
+        left: 60vw;
+        top: 1500px;
+        height: 23vw;
+        width: 20vw;
     }
 }
