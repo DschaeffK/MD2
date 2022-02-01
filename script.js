@@ -33,18 +33,9 @@ let fourth_info = document.getElementById('fourth-info');
 
 let flieger = document.getElementById('flieger');
 
-let apple_me = document.getElementById('apple-me');
-let buybtn = document.getElementById('buybtn');
-
 for(let wolke of wolken) {
     wolkenOrigins[wolke.id] = getOrigin(wolke);
 }
-
-init();
-
-window.addEventListener('resize', function() {
-    init();
-});
 
 window.addEventListener('scroll', function() {
     let scrollY = window.scrollY;
@@ -90,13 +81,6 @@ window.addEventListener('scroll', function() {
     }
     // continueScrolling(apfel, scrollY, 1.05);
 });
-
-function init(){
-    console.log(apple_me.getBoundingClientRect().y + 'px');
-    console.log(apple_me.getBoundingClientRect().x + 'px');
-    buybtn.style.top = apple_me.getBoundingClientRect().y + 'px';
-    buybtn.style.left = apple_me.getBoundingClientRect().x + 'px';
-}
 
 function fadeInFirstFact(apfel)
 {
